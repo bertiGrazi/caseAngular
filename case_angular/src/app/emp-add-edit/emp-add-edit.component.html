@@ -7,17 +7,29 @@
       <input matInput type="text" placeholder="Nome do Item">
     </mat-form-field>
 
-    <mat-form-field appearance="outline">
-      <input matInput type="number" placeholder="">
+    <mat-form-field>
+      <mat-select placeholder="Quantidade">
+        <ng-container *ngFor="let number of numbers">
+          <mat-option [value]="number">{{ number }}</mat-option>
+        </ng-container>
+      </mat-select>
     </mat-form-field>
 
     <mat-form-field appearance="outline">
-      <input matInput type="number" placeholder="">
+      <input matInput type="number" placeholder="Quantidade">
     </mat-form-field>
 
     <mat-form-field appearance="outline">
-      <input matInput type="number" placeholder="">
+      <input matInput type="number" placeholder="Preço">
     </mat-form-field>
+  </div>
+
+  <div class="row">
+    <mat-radio-group aria-label="Select an option">
+      <mat-label><b>Produto Perecível:</b></mat-label>
+      <mat-radio-button value="1">Sim</mat-radio-button>
+      <mat-radio-button value="2">Não</mat-radio-button>
+    </mat-radio-group>
   </div>
 
 
