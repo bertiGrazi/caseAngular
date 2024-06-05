@@ -6,7 +6,6 @@ import { Observable } from 'rxjs'
   providedIn: 'root'
 })
 export class ItemServices {
-
   constructor(private _http: HttpClient) { }
 
   addItem(data: any): Observable<any> {
