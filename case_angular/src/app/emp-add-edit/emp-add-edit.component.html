@@ -1,10 +1,31 @@
 <div mat-dialog-title>
   <h1>Preencha o formulário abaixo:</h1>
 </div>
-<div mat-dialog-content>
+<div mat-dialog-content class="content">
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Item</mat-label>
+      <input matInput type="text" placeholder="Nome do Item">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Medida</mat-label>
+      <input matInput type="number" placeholder="">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Quantidade:</mat-label>
+      <input matInput type="number" placeholder="">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Preço:</mat-label>
+      <input matInput type="number" placeholder="">
+    </mat-form-field>
+  </div>
   
 </div>
 <div mat-dialog-actions>
   <button mat-raised-button>Cancelar</button>
-  <button mat-raised-button color="primary">Salvar</button>
+  <button mat-raised-button color="acent">Salvar</button>
 </div>
