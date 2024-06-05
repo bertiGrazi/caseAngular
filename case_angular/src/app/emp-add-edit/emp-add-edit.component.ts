@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { EmployeeService } from '../services/employee.service';
+import { ItemServices } from '../services/item.service';
 import { DialogRef } from '@angular/cdk/dialog';
 
 @Component({
@@ -13,7 +13,7 @@ export class EmpAddEditComponent {
 
   numbers: number[] = Array.from({ length: 100 }, (_, i) => i + 1);
 
-  constructor(private _fb: FormBuilder, private _empService: EmployeeService, private _dialogRef: DialogRef<EmpAddEditComponent>) {
+  constructor(private _fb: FormBuilder, private _empService: ItemServices, private _dialogRef: DialogRef<EmpAddEditComponent>) {
     this.empForm = this._fb.group({
       nameItem: '',
       measure: '',
