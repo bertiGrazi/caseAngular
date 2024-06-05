@@ -22,4 +22,10 @@ export class EmpAddEditComponent {
       fabrication: '',
     })
   }
+
+  onFormSubmit() {
+    if(this.empForm.valid) {
+      console.log(this.empForm.value)
+    }
+  }
 }
